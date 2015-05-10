@@ -46,7 +46,7 @@
                                 <rect key="frame" x="87" y="120" width="149" height="102"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwo-Eu-VlW">
-                                <rect key="frame" x="57" y="70" width="97" height="29"/>
+                                <rect key="frame" x="57" y="70" width="55" height="29"/>
                                 <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -83,7 +83,7 @@
         <!--View Controller-->
         <scene sceneID="8L8-cQ-MKa">
             <objects>
-                <viewController id="bbO-cF-Mk3" customClass="ViewController" customModule="TechMonster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bbO-cF-Mk3" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XlI-0L-m3V"/>
                         <viewControllerLayoutGuide type="bottom" id="JMf-Gh-xDx"/>
@@ -105,15 +105,12 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="playerAttack" destination="bbO-cF-Mk3" eventType="touchUpInside" id="anY-Au-idK"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLY-pM-kpC">
-                                <rect key="frame" x="24" y="164" width="96" height="103"/>
+                                <rect key="frame" x="24" y="171" width="96" height="96"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHN-5T-cuv">
-                                <rect key="frame" x="194" y="57" width="95" height="99"/>
+                                <rect key="frame" x="194" y="57" width="95" height="95"/>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nVT-ta-Spd">
                                 <rect key="frame" x="128" y="218" width="81" height="2"/>
@@ -121,14 +118,14 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1n1-yO-yUP">
                                 <rect key="frame" x="98" y="104" width="88" height="2"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="neme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmo-HD-6i3">
-                                <rect key="frame" x="128" y="228" width="81" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="neme" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmo-HD-6i3">
+                                <rect key="frame" x="128" y="228" width="44" height="25"/>
                                 <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2F-bj-b2B">
-                                <rect key="frame" x="106" y="75" width="80" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2F-bj-b2B">
+                                <rect key="frame" x="143" y="75" width="43" height="21"/>
                                 <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -136,16 +133,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="attackButton" destination="jjc-gU-Mob" id="GFp-Kl-Gkv"/>
-                        <outlet property="backgroundImageView" destination="1dJ-Tj-H7r" id="Y1X-mL-OIQ"/>
-                        <outlet property="enemyHPBar" destination="1n1-yO-yUP" id="2yO-6k-RUA"/>
-                        <outlet property="enemyImageView" destination="aHN-5T-cuv" id="BO8-ff-BCJ"/>
-                        <outlet property="enemyNameLabel" destination="L2F-bj-b2B" id="JQO-lI-WW5"/>
-                        <outlet property="playerHPBar" destination="nVT-ta-Spd" id="axI-0v-NSW"/>
-                        <outlet property="playerImageView" destination="JLY-pM-kpC" id="rvN-st-IV2"/>
-                        <outlet property="playerNameLabel" destination="fmo-HD-6i3" id="I7c-zf-yS5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBn-Ct-te8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
